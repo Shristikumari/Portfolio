@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #f5eec2;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+h1{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size:3.5rem;
+    margin-top: 7%;
+}
+:root{
+--width:100vw;
+--height:100vh;
+--bg:#416a59;
+
+}
+.navbar li a{
+    color: #416a59;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+#banner_area{
+    width:100%;
+   }
+#exprience{
+    background-color: #416a59;
+    -webkit-clip-path: polygon(50% 0, 75% 8%, 100% 0, 100% 62%, 100% 84%, 100% 100%, 100% 100%, 0 100%, 0 0, 24% 8%);
+    clip-path: polygon(50% 0, 75% 8%, 100% 0, 100% 62%, 100% 84%, 100% 100%, 100% 100%, 0 100%, 0 0, 24% 8%);  
+    color: white;  
+}
+#exprience p{
+    text-align: justify;
+}
+    #myself{
+    width:100%;
+   background-color: var(--bg);
+   -webkit-clip-path: polygon(50% 0, 75% 8%, 100% 0, 100% 62%, 100% 84%, 100% 100%, 100% 100%, 0 100%, 0 0, 24% 8%);
+   clip-path: polygon(50% 0, 75% 8%, 100% 0, 100% 62%, 100% 84%, 100% 100%, 100% 100%, 0 100%, 0 0, 24% 8%);  
+   color: white;
+ 
+}
+#banner-content h1{
+    background-image:linear-gradient(to right,#416a59,#a9c25d);
+    background-position: 100% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;  
+      font-size: 5.5rem;
+      font-weight: 900;
+        background-size: cover;
+      /* color: #416a59; */
+
+}
+#banner_second{
+    -webkit-clip-path: polygon(100% 0%, 100% 53%, 100% 100%, 25% 100%, 66% 52%, 25% 0%);
+    clip-path: polygon(100% 0%, 100% 53%, 100% 100%, 25% 100%, 66% 52%, 25% 0%);
+    background-color: #416a59;
+}
+.bi-border-width{
+    font-size: 3.3rem;
+    outline: none;
+    border: none;
+}
+.bi-border-width:focus{
+    outline: none;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+     
+}
+@media(max-width:778px){
+    html{
+        font-size: 45%;
+    }
+     
+}
+#skills_cont {
+    width: 100%;
+}
+  
+.skills {
+    text-align: right;
+    color: white;
+    height: 3px;
+}
+#exp_2 p{
+    margin-left: 5%;
+}
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+  
+.square{
+      position: relative;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+  @media(max-width:998px){
+    .square{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  .square span:nth-child(1){
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid white;
+      border-radius: 38% 62% 63%  37% / 41% 44% 56% 59%;
+      transition: 0.5s;
+      animation:animation 10s linear infinite;
+  }
+  .square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 32% 56% 57%  31% / 35% 38% 50% 53%;
+    animation:animation 10s linear infinite;
+
+    
+}  .square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 30% 54% 55%  29% / 33% 36% 48% 51%;
+    animation:animation 40s linear infinite;
+
+}
+@keyframes animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#portfolio .row .col-md-3{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    z-index: 2;
+    opacity: 0;
+}
+#portfolio h1{
+    text-align: center;
+    color: var(--bg);
+    font-weight: 900;
+}
+#portfolio .circle a{
+     text-align: center;
+     font-size: 0.6rem;
+     text-decoration-line: none;
+     color: white;
+}
+#portfolio .img-fluid:hover{
+    transform: scale(1.1);
+}
+#portfolio .circle:hover{
+    opacity: 1;
+}
+#contact_me h1{
+    font-size: 5rem;
+    color: var(--bg);
+}
+#contact_me p{
+    text-align: justify;
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+#contact_me_2{
+    background-color: var(--bg);
+    padding: 5%;
+    border-radius: 1rem;
+}
+#footer{
+    background-color: var(--bg);
+}
